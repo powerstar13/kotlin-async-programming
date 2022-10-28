@@ -15,7 +15,7 @@ fun main() {
 
     println("계산 시작")
 
-    val futureResult = future.get() // 비동기 작업의 결과를 기다린다. (WARN: 블러킹 상태가 되며, 타임아웃을 걸지 않으면 무한정 기다리는 상황이 발생...)
+    val futureResult = future.get() // 비동기 작업의 결과를 기다린다. (WARN: 블로킹 상태가 되며, 타임아웃을 걸지 않으면 무한정 기다리는 상황이 발생...)
     println(futureResult)
     println("계산 종료")
 }
